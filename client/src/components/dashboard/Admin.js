@@ -25,9 +25,6 @@ const Admin = (props) => {
      <div className="dashcon">
      <ul className="admin-menu">
       <li className="menu-heading"><Link to="/addProduct">Insert Product</Link></li>
-      <li className="menu-heading"><Link to="/addProduct">Insert Product</Link></li>
-      <li className="menu-heading"><Link to="/addProduct">Insert Product</Link></li>
-      <li className="menu-heading"><Link to="/addProduct">Insert Product</Link></li>
     </ul>
    <div className="hero">
      <h1>Welcome</h1>

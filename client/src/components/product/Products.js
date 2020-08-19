@@ -51,11 +51,8 @@ const dispatch = useDispatch();
            <Link className="link" to={'product/'+ product._id}>{product.name}</Link>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-          <p>{product.category}</p>
-         <p>Number of Reviews: {product.numReviews}</p>
-         <p>{product.brand}</p>
-         <p>{product.rating}</p>
-         <p>Price: {product.price}TK</p>
+          <p>Brand: {product.brand}</p>
+         <p className="qty">Price: {product.price} TK</p>
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -48,14 +48,14 @@ const ProductDetails = (props) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            <h3>{product.name}</h3>
-            {product.brand}
+            <h3>Product Name:  {product.name}</h3>
+            <p>Brand: {product.brand}</p>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-           <h4>Price: {product.price}</h4> 
-            Rating: {product.rating}
+           <h3>Price: {product.price} Taka</h3> 
+           <h5> Rating: {product.rating}</h5>
           </Typography>
-          QTY: <select value={qty} onChange= { (e) => setQty(e.target.value)}>
+          QTY: <select className="qty" value={qty} onChange= { (e) => setQty(e.target.value)}>
               {[...Array(product.inStock).keys()].map(x => 
                 <option key={x+1} value={x+1}>{x+1}</option>)}
           </select>

@@ -35,7 +35,7 @@ const PostProduct = (props) => {
    }
     return (
         <div className="container">
-            <h1 className="large text-primary">Add a new product</h1>
+            <h1 className="large text-primary heading">Add a new product</h1>
       <h3 className="lead"></h3>
       <form className="form" onSubmit = {e => onSubmit(e)}>
         <div className="form-group">
@@ -107,9 +107,6 @@ const PostProduct = (props) => {
         </div>
         <input type="submit" className="btn btn-primary" value="Submit" />
       </form>
-      <p className="my-1">
-        Already have an account? <Link to='/dashboard'>Dashboard</Link>
-      </p>
         </div>
     )
 }
