@@ -1,0 +1,236 @@
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.navbar{
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.navbar:hover {
+  color: orange;
+}
+
+.productList{
+    float: left;
+    text-align: center;
+    width: 33%;
+    margin-top: 10px;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.card{
+  margin-top: 20px;
+  margin-left: 150px;
+  height: 800px;
+}
+
+.btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.form .form-group {
+  margin: 1.2rem 0;
+}
+
+.form .form-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='number'],
+.form input[type='date'],
+.form select,
+.form textarea {
+  display: block;
+  width: 60%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.cart{
+  width: 90%;
+  margin-top: 25px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.navbtn{
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.order{
+  display:flex;
+  width: 80%;
+  margin: auto;
+}
+.heading{
+  text-align: center;
+  font-size: 50px;
+  color: cornflowerblue;
+  border-bottom: 3px solid black;
+  margin-bottom: 5px;
+}
+
+.cart-data{
+  margin-top: 50px;
+  width: 400px;
+}
+.cart-data h1{
+  background-color: blueviolet;
+}
+
+.user-info{
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: center;
+  width: 35%;
+  background-color: blueviolet;
+}
+
+ul{
+  background: #3399ff;
+  padding: 20px;
+}
+
+ul li{
+  background: #cce5ff;
+  margin: 5px;
+}
+
+.position{
+  margin-top: 20px;
+  margin-left: 40%;
+}
+
+.total{
+  text-align: right;
+  margin-top: 5px;
+}
+
+.cartList{
+  width: 60%;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.cart-display{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  background-color: cadetblue;
+}
+
+.dess{
+  margin-top: 4px;
+  padding: 5px;
+}
+
+.cart-display img{
+  height: 150px;
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.des{
+  margin-left: 60px;
+}
+
+.cart-btn{
+  margin-left: 60px;
+  background: black;
+  color: white;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  height: 40px;
+  width: 90px;
+}
+
+.cartAction{
+  margin: auto;
+  background-color: greenyellow;
+  width: 30%;
+  text-align: center;
+  justify-items: center;
+  height: 150px;
+  padding-top:12px ;
+  border: 2px solid black;
+}
+
+.cartAction button{
+  margin-top: 5px;
+}
+
+
+.nav-auth{
+  display: flex;
+}
+
+.nav-auth .l{
+  margin: 0px 20px 0px 20px;
+}
+
+.userOrders{
+  margin-top: 10px;
+  width: 65%;
+}
+
+.userOrders ul{
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.userOrders ul li{
+  display: inline;
+  padding: 5px;
+}
+
+.up-confirm{
+  margin-top: 20px;
+  color: blueviolet;
+  font-size: 30px;
+}

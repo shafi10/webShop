@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb://shafi:shafi100@ds261486.mlab.com:61486/shopping",
+    "jwtSecret":"mysecret"
+}
