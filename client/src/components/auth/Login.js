@@ -21,12 +21,12 @@ const Login = (props) => {
    }
 
     return (
-        <div className="container">
+        <div className="">
         <h1 className="large text-primary">Sign In</h1>
         <h3> Sign into Your Account</h3>
        <form className="form" onSubmit = {e => onSubmit(e)}>
         <div className="form-group">
-          <input type="email" placeholder="Email Address" name="email"
+          <input type="email" class="form-control" placeholder="Email Address" name="email"
           value = {email}
           onChange = {e => onChange(e)}
           required
@@ -35,6 +35,7 @@ const Login = (props) => {
         <div className="form-group">
           <input
             type="password"
+            class="form-control"
             placeholder="Password"
             name="password"
             minLength="6"

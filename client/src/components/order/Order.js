@@ -29,12 +29,12 @@ const Order = (props) => {
 
     return (
         <div>
-        <h1 className="heading">Order and user Details</h1>
+        <h1 className="border-bottom text-success mb-2 mt-4">Order and user Details</h1>
 
-      <div className="order">
-      <div className="cart-data">
-          <h1>Orders Details</h1>
-        <table className="products">
+      <div className="row">
+      <div className="col-md-8">
+          <h1 className="border-bottom text-success mb-2 mt-4">Orders Details</h1>
+        <table className="table">
       <tr>
         <th>Name</th>
         <th>Price</th>
@@ -48,24 +48,24 @@ const Order = (props) => {
        </tr>
           )}
       </table>
-      <h3 className="total">Total QTY: {totalQty} Quantity</h3>
-      <h3 className="total">Item Price : {itemPrice} Taka</h3>
-      <h3 className="total">Shapping Price: {shippingPrice} Taka</h3>
-      <h3 className="total">Total Vat: {vatPrice} Taka</h3>
-      <h3 className="total">Total Price: {totalPrice} Taka</h3>
+      <p className="total">Total QTY: {totalQty} Quantity</p>
+      <p className="total">Item Price : {itemPrice} Taka</p>
+      <p className="total">Shipping Price: {shippingPrice} Taka</p>
+      <p className="total border-bottom">Total Vat: {vatPrice} Taka</p>
+      <h5 className="total">Total Price: {totalPrice} Taka</h5>
      </div>
-         <div className="user-info">
-               <h1>User Address</h1>
-                   <ul>
-                       <li>name:{user ? user.name : ''}</li>
-                       <li>Address:{user? user.address : ''}</li>
-                       <li>Phone:{user? user.phone : ''}</li>
-                       <li>Delivary Address:{user? user.address : ''}</li>
+         <div className="col-md-4">
+               <h1 className="border-bottom text-success mb-2 mt-4">User Address</h1>
+                   <ul class="list-group">
+                       <li class="list-group-item">name:{user ? user.name : ''}</li>
+                       <li class="list-group-item">Address:{user? user.address : ''}</li>
+                       <li class="list-group-item">Phone:{user? user.phone : ''}</li>
+                       <li class="list-group-item">Delivary Address:{user? user.address : ''}</li>
                    </ul>
             </div>
             </div>
 
-            <button className="btn position" onClick ={() => saveOrder(cartItems,totalQty,totalPrice)}>Submit Order</button>
+            <button className="btn btn-primary mt-2" onClick ={() => saveOrder(cartItems,totalQty,totalPrice)}>Submit Order</button>
         </div>
     )
 }

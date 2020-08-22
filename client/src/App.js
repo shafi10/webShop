@@ -18,6 +18,8 @@ import store from './store'
 import setAuthToken from './utils/setAuthToken';
 import {loadUser} from './actions/auth'
 import UserDash from './components/dashboard/UserDash';
+import Spinner from './components/Spinner';
+
 
 if(localStorage.token){
   setAuthToken(localStorage.token)
@@ -34,6 +36,7 @@ function App() {
     <Router>
     <div className="App">
       <Navbar />
+      <div className="container">
       <Switch>
       <Route exact path='/' component={Products} />
       <Route exact path='/register' component={Register} />
@@ -47,6 +50,7 @@ function App() {
       <Route exact path='/orderDetails/:id' component={OrderDetails} />
       <Route exact path='/dashboard' component={UserDash} />
       </Switch>
+      </div>
     </div>
     </Router>
     </Provider>

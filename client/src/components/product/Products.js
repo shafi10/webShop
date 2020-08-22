@@ -1,24 +1,9 @@
 import React,{useEffect} from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import {Link} from "react-router-dom";
 import { get_product } from '../../actions/product'
 import { useDispatch,useSelector } from 'react-redux';
+import Spinner from '../Spinner';
 
-const useStyles = makeStyles({
-    root: {
-      maxWidth: 270,
-    },
-    media: {
-      height: 140,
-    },
-  });
 
 const Products = () => {
 
@@ -29,42 +14,26 @@ const dispatch = useDispatch();
     dispatch(get_product())
   }, []);
 
-    
-    const classes = useStyles();
-
     return (
-
-      loading ? <div>loading</div> :
-      <div className="container">
-        <h1>Product List</h1>
-      { products.map(product => 
-      <div className="productList">
-        <Card className={classes.root }>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={product.image}
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-           <Link className="link" to={'product/'+ product._id}>{product.name}</Link>
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          <p>Brand: {product.brand}</p>
-         <p className="qty">Price: {product.price} TK</p>
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-        <Link className="link" to={'product/'+ product._id}>Details</Link>
-        </Button>
-      </CardActions>
-    </Card>
-    </div>
+     loading ? <Spinner /> :
+     <div className="">
+       <div className="border-bottom text-success mb-2 mt-4"><h1>Product List</h1></div>
+       <div className="row mt-3">
+       {products.map(product=> 
+        <div className="col-md-4">
+        <div class="card mt-3">
+           <img src={product.image} class="card-img-top" alt="..." />
+            <div class="card-body">
+            <h5 class="card-title">Product Name: {product.name}</h5>
+            <h5 class="card-title">Product Price: {product.price} Taka</h5>
+              <p class="card-text">Product Category: {product.category}</p>
+             <Link className="btn btn-primary" to={'product/'+ product._id}>Details</Link>
+            </div>
+            </div>
+        </div>
         )}
         </div>
+     </div>
     )
 }
 

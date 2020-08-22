@@ -39,13 +39,13 @@ const PostProduct = (props) => {
       <h3 className="lead"></h3>
       <form className="form" onSubmit = {e => onSubmit(e)}>
         <div className="form-group">
-          <input type="text" placeholder="Name" name="name"
+          <input type="text" class="form-control" placeholder="Name" name="name"
           value = {name}
           onChange = {e => onChange(e)}
           required />
         </div>
         <div className="form-group">
-          <input type="text" placeholder="category" name="category"
+          <input type="text" class="form-control" placeholder="category" name="category"
           value = {category}
           onChange = {e => onChange(e)}
           required
@@ -54,6 +54,7 @@ const PostProduct = (props) => {
         <div className="form-group">
           <input
             type="text"
+            class="form-control"
             placeholder="Image URL"
             name="image"
             value = {image}
@@ -63,6 +64,7 @@ const PostProduct = (props) => {
         <div className="form-group">
           <input
             type="number"
+            class="form-control"
             placeholder="Price"
             name="price"
             value = {price}
@@ -72,6 +74,7 @@ const PostProduct = (props) => {
         <div className="form-group">
           <input
             type="text"
+            class="form-control"
             placeholder="brand"
             name="brand"
             value = {brand}
@@ -81,6 +84,7 @@ const PostProduct = (props) => {
         <div className="form-group">
           <input
             type="number"
+            class="form-control"
             placeholder="Rating"
             name="rating"
             value = {rating}
@@ -90,6 +94,7 @@ const PostProduct = (props) => {
         <div className="form-group">
           <input
             type="number"
+            class="form-control"
             placeholder="Number of Reviews"
             name="numReviews"
             value = {numReviews}
@@ -99,6 +104,7 @@ const PostProduct = (props) => {
         <div className="form-group">
           <input
             type="number"
+            class="form-control"
             placeholder="Number of Stock"
             name="inStock"
             value = {inStock}

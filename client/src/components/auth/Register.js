@@ -32,13 +32,13 @@ const Register = (props) => {
       <h3 className="lead">Create Your Account</h3>
       <form className="form" onSubmit = {e => onSubmit(e)}>
         <div className="form-group">
-          <input type="text" placeholder="Name" name="name"
+          <input type="text" class="form-control" placeholder="Name" name="name"
           value = {name}
           onChange = {e => onChange(e)}
           required />
         </div>
         <div className="form-group">
-          <input type="email" placeholder="Email Address" name="email"
+          <input type="email" class="form-control" placeholder="Email Address" name="email"
           value = {email}
           onChange = {e => onChange(e)}
           required
@@ -47,6 +47,7 @@ const Register = (props) => {
         <div className="form-group">
           <input
             type="password"
+            class="form-control"
             placeholder="Password"
             name="password"
             minLength="6"
@@ -57,6 +58,7 @@ const Register = (props) => {
         <div className="form-group">
           <input
             type="password"
+            class="form-control"
             placeholder="Confirm Password"
             name="password2"
             minLength="6"
@@ -67,6 +69,7 @@ const Register = (props) => {
         <div className="form-group">
           <input
             type="text"
+            class="form-control"
             placeholder="Addresss"
             name="address"
             value = {address}
@@ -76,6 +79,7 @@ const Register = (props) => {
         <div className="form-group">
           <input
             type="number"
+            class="form-control"
             placeholder="Phone"
             name="phone"
             value = {phone}

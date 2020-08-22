@@ -16,10 +16,10 @@ const UserDash = () => {
             <h3 className="heading">Your Previous Orders</h3>
                <div className="userOrders">
                    {userOrder.map(data=>
-                    <ul>
-                      <li>Order ID: {data._id}</li>
-                      <li>Total Price: {data.totalPrice}</li>
-                      <li>Status: {data.status}</li>
+                    <ul class="list-group mt-2">
+                      <li  class="list-group-item">Order ID: {data._id}</li>
+                      <li  class="list-group-item">Total Price: {data.totalPrice}</li>
+                      <li class="list-group-item">Status: {data.status}</li>
                     </ul>
                     )}
                </div>
